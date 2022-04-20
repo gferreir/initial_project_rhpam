@@ -10,7 +10,7 @@ public class Customer implements java.io.Serializable {
 
 	private java.lang.String name;
 	private java.lang.Integer age;
-	private java.lang.Integer celNumber;
+	private int celNumber;
 	private java.util.List<java.lang.String> descriptions;
 
 	public Customer() {
@@ -32,14 +32,6 @@ public class Customer implements java.io.Serializable {
 		this.age = age;
 	}
 
-	public java.lang.Integer getCelNumber() {
-		return this.celNumber;
-	}
-
-	public void setCelNumber(java.lang.Integer celNumber) {
-		this.celNumber = celNumber;
-	}
-
 	public java.util.List<java.lang.String> getDescriptions() {
 		return this.descriptions;
 	}
@@ -48,9 +40,16 @@ public class Customer implements java.io.Serializable {
 		this.descriptions = descriptions;
 	}
 
+	public int getCelNumber() {
+		return this.celNumber;
+	}
+
+	public void setCelNumber(int celNumber) {
+		this.celNumber = celNumber;
+	}
+
 	public Customer(java.lang.String name, java.lang.Integer age,
-			java.lang.Integer celNumber,
-			java.util.List<java.lang.String> descriptions) {
+			int celNumber, java.util.List<java.lang.String> descriptions) {
 		this.name = name;
 		this.age = age;
 		this.celNumber = celNumber;
