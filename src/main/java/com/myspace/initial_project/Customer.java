@@ -6,12 +6,55 @@ package com.myspace.initial_project;
 
 public class Customer implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Customer() {
-    }
+	private java.lang.String name;
+	private java.lang.Integer age;
+	private java.lang.Integer celNumber;
+	private java.util.List<java.lang.String> descriptions;
 
+	public Customer() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Integer getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.Integer age) {
+		this.age = age;
+	}
+
+	public java.lang.Integer getCelNumber() {
+		return this.celNumber;
+	}
+
+	public void setCelNumber(java.lang.Integer celNumber) {
+		this.celNumber = celNumber;
+	}
+
+	public java.util.List<java.lang.String> getDescriptions() {
+		return this.descriptions;
+	}
+
+	public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+		this.descriptions = descriptions;
+	}
+
+	public Customer(java.lang.String name, java.lang.Integer age,
+			java.lang.Integer celNumber,
+			java.util.List<java.lang.String> descriptions) {
+		this.name = name;
+		this.age = age;
+		this.celNumber = celNumber;
+		this.descriptions = descriptions;
+	}
 
 }
